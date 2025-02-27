@@ -1,0 +1,81 @@
+
+body {
+    margin: 3%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+   /* height: 100vh; */
+}
+
+
+h1 {
+    text-align: center;
+    font-family: "jali-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 50px;
+    margin-top: 5%;
+    line-height: 0%;
+}
+
+h2 {
+    text-align: center;
+    font-family: "cc-phat-boi-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    margin-top: -1%;
+}
+
+#charInput {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 12%; 
+    margin-top: -1%;
+    margin-bottom: 10px; 
+    border: 2px solid black; 
+    background: transparent; 
+    outline: none; 
+    box-shadow: none; 
+    border-radius: 12px;
+    font-family: "cc-phat-boi-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+#submitButton {
+    display: inline-block;
+    font-family: "jali-latin-variable", sans-serif;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 30px;
+    border: 0;
+    color: black;
+    font-size: 17.5px;
+    border: 2px solid transparent;
+    border-color: #000;
+    background: transparent;
+    font-weight: 800;
+    line-height: 30px;
+    transition: background-color .1s ease-in-out;
+    margin-bottom: 20px; 
+    border-radius: 12px;
+}
+
+#submitButton:hover {
+    background-color: #000;
+    color: #fff;
+    border: 3px solid transparent;
+}
+
+
+#displayedImage {
+    display: none; 
+    width: 400px;
+    height: auto;
+    margin-top: 10px; 
+}

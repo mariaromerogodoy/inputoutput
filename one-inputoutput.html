@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+
+        /* STYLE FOR THE INPUT FIELD */
+        #charInput {
+
+        }
+
+        /* STYLE FOR THE SUBMIT BUTTON */
+        #submitButton {
+
+        }
+
+        /* STYLE FOR THE IMAGE */
+        #displayedImage {
+            display: none; /* This line is mandatory */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Mood of the Day</h1>
+    <h2>type a letter into the box</h2>
+
+     <link rel="stylesheet" href="https://use.typekit.net/qee0maw.css"> 
+    
+    <!-- INPUT FIELD FOR 1 CHARACTER -->
+    <input type="text" id="charInput" maxlength="1">
+
+    <!-- BUTTON TO DISPLAY IMAGE -->
+    <button onclick="displayImage()" id="submitButton">Show Image</button>
+
+    <!-- IMAGE TO DISPLAY -->
+    <img id="displayedImage" src="" alt="Displayed Image">
+
+
+    <!-- Image Display Script Below -->
+    <script>
+        // Array of images
+        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
+        const images = [
+   "sad.png", //A
+    "sleepy.png", //B
+    "surprised.png", //C
+    "mad.png", //D
+    "happy.png", //E
+    "confused.png", //F
+    "calm.png", //G
+    "concerned.png", //H
+    "crazy.png", //I
+    "creepy.png", //J
+    "disapointed.png", //K
+    "diviuse.png", //L
+    "dolledup.png", //M
+    "mistiviuse.png", //N
+    "old.png", //O
+    "overit.png", //P
+    "rich.png", //Q
+    "saliva.png", //R
+    "shocked.png", //S
+    "stressed.png", //T
+    "toungeout.png", //U
+    "meh.png", //V
+    "flirty.png", //W
+    "wink.png", //X
+    "tounge.png", //Y
+    "last.png"  //Z
+];
+
+function displayImage() {
+    const input = document.getElementById("charInput").value.toUpperCase();
+    const imgElement = document.getElementById("displayedImage");
+    
+    // Assign an image based on character (A-Z)
+    const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
+    if (index >= 0 && index < images.length) {
+        imgElement.src = images[index];
+        imgElement.style.display = "block";
+    } else {
+        /* 
+        alert("Please enter a letter between A and Z.");
+        imgElement.style.display = "none";
+        */
+
+        // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
+        imgElement.src = "tryagain.png"
+        imgElement.style.display = "block";
+    }
+}
+    </script>
+
+</body>
+</html>
