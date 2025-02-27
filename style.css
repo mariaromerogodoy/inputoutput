@@ -25,7 +25,7 @@ h2 {
     font-variation-settings: 'wght' 400;
     font-style: normal;
     font-size: 21px;
-    margin-top: -1%;
+    margin-top: -2%;
 }
 
 #charInput {
@@ -50,6 +50,7 @@ h2 {
 #submitButton {
     display: inline-block;
     font-family: "jali-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     outline: 0;
     text-align: center;
     cursor: pointer;
