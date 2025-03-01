@@ -1,84 +1,37 @@
-
 body {
-    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url('../images2/grid.jpg');
+    background-size: cover;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
     flex-direction: column; 
-   /* height: 100vh; */
+    align-items: center;
+    cursor: url('790c78d39fd853ae72167411aa11d727-pixilated-hand-cursor-1.png.webp'), auto;
 }
 
-
-h1 {
-    text-align: center;
-    font-family: "jali-latin-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
-    font-size: 44px;
-    margin-top: 5%;
-    line-height: 0%;
-    letter-spacing: -3px;
-}
-
-h2 {
-    text-align: center;
-    font-family: "jali-latin-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
-    font-style: normal;
-    font-size: 18px;
-    margin-top: 0%;
-}
-
-#charInput {
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    width: 12%; 
-    margin-top: -1%;
-    margin-bottom: 10px; 
-    border: 2px solid black; 
-    background: transparent; 
-    outline: none; 
-    box-shadow: none; 
-    border-radius: 12px;
-    font-family: "jali-latin-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
-    font-style: normal;
-    font-size: 20px;
-}
-
-
-#submitButton {
-    display: inline-block;
-    font-family: "jali-latin-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
-    outline: 0;
-    text-align: center;
+.button-link {
+    display: inline-flex;  
+    align-items: center;
+    justify-content: center;
+    background-color: #ff90e8;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #000;
+    margin-top: 100px;
     cursor: pointer;
-    padding: 17px 30px;
-    border: 0;
-    color: black;
-    font-size: 17.5px;
-    border: 2px solid transparent;
-    border-color: #000;
-    background: transparent;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 30px;
-    transition: background-color .1s ease-in-out;
-    margin-bottom: 20px; 
-    border-radius: 12px;
+    font-size: 20px;
+    padding: 20px 30px;
+    text-decoration: none; 
+    text-align: center;
+    transition: all 0.14s ease-out;
+    white-space: nowrap;
 }
 
-#submitButton:hover {
-    background-color: #000;
-    color: #fff;
-    border: 3px solid transparent;
+.button-link:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px, -4px);
 }
 
-
-#displayedImage {
-    display: none; 
-    width: 300px;
-    height: auto;
-    margin-top: 10px; 
+.button-link:focus-visible {
+    outline-offset: 1px;
 }
