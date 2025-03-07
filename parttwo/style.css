@@ -9,8 +9,30 @@ body {
    /* height: 100vh; */
 }
 
+.container {
+    display: flex; /* Use flexbox to arrange content side by side */
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Align items vertically centered */
+    width: 100%; /* Full width of the screen */
+    padding: 20px; /* Some padding around the container */
+}
+
+/* Left container for inputs and title */
+.left-side {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Add some space between left and right sections */
+}
+
+/* Right container for displaying images */
+.right-side {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: center; /* Center images in the right container */
+    align-items: center; /* Align images vertically in the center */
+}
+
 h1{
-    text-align: center;
+    text-align: left;
     font-family: "jali-latin-variable", sans-serif;
     font-variation-settings: 'wght' 400;
     font-size: 44px;
@@ -79,5 +101,11 @@ h1{
     background-color: #000;
     color: #fff;
     border: 3px solid transparent;
+}
+
+#displayedImage {
+    display: none;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
 }
 

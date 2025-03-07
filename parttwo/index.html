@@ -29,10 +29,16 @@
         /* STYLE FOR THE IMAGE */
         #displayedImage {
             display: none; /* This line is mandatory */
+            max-width: 100%; 
+            height: auto;
         }
+
     </style>
 </head>
 <body>
+
+<div class="container">
+    <div class="left-side">
 
 <h1>Whats in your basket</h1>
     <!-- INPUT FIELD FOR 1 CHARACTER -->
@@ -41,10 +47,16 @@
 
     <!-- BUTTON TO DISPLAY IMAGE -->
     <button onclick="displayImage()" id="submitButton">Show Image</button>
+    <div> class="basket"
+        <img link="../images2/basket.jpeg">  </img>
+    </div> 
+</div>
 
-    <!-- IMAGE TO DISPLAY -->
+
+<div class="right-container">
     <img id="displayedImage" src="" alt="Displayed Image">
-
+</div>
+</div>
 
     <!-- Image Display Script Below -->
     <script>
@@ -64,14 +76,14 @@
     //HINT 1: You can compare strings with comparison operators and boolean operators
     //COMPARISON & LOGICAL OPERATORS: https://www.w3schools.com/js/js_comparisons.asp
     if(input1_letter === "A" && input2_letter !== "B") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
-        imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+        imgElement.src = "../images2/film.jpeg"
         imgElement.style.display = "block";
     }
 
 
     //HINT 2: Assign an image based numerical values
     if(input1_number == 67 && input2_number == 68) { //If input1_number is 67 (C) AND input2_number is 68 (D), then show this image
-        imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+        imgElement.src = "../images2/egg.jpeg"
         imgElement.style.display = "block";
     } 
 
@@ -82,7 +94,7 @@
     console.log(mymathresult); //Console is a way to show a value in the console inspector
 
     if(mymathresult < 1) { //If mymathresult is less than 1, then show this image
-        imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+        imgElement.src = "../images2/money.jpeg"
         imgElement.style.display = "block";
     }
 

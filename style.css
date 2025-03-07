@@ -1,29 +1,39 @@
 body {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 15%;
     background-image: url('../images2/grid.jpg');
     background-size: cover;
     display: flex;
-    flex-direction: column; 
+   /* flex-direction: column;*/ 
     align-items: center;
-    cursor: url('790c78d39fd853ae72167411aa11d727-pixilated-hand-cursor-1.png.webp'), auto;
+    cursor: url('  '), auto;
+}
+
+.button-container {
+  display: flex;  
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px;
+  margin-left: 40%;
 }
 
 .button-link {
-    display: inline-flex;  
+    display: inline-block;
     align-items: center;
     justify-content: center;
     background-color: #ff90e8;
     color: #000;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "jali-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     border: 2px solid #000;
     margin-top: 100px;
     cursor: pointer;
     font-size: 20px;
-    padding: 20px 30px;
+    padding: 30px 50px;
+    padding: 10px;
     text-decoration: none; 
     text-align: center;
     transition: all 0.14s ease-out;
+    gap: 10px;
     white-space: nowrap;
 }
 

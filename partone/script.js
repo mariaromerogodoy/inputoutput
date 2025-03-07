@@ -2,32 +2,32 @@
 
 
 const images = [
-    "sad.png", //A
-    "sleepy.png", //B
-    "surprised.png", //C
-    "mad.png", //D
-    "happy.png", //E
-    "confused.png", //F
-    "calm.png", //G
-    "concerned.png", //H
-    "crazy.png", //I
-    "creepy.png", //J
-    "disapointed.png", //K
-    "diviuse.png", //L
-    "dolledup.png", //M
-    "mistiviuse.png", //N
-    "old.png", //O
-    "overit.png", //P
-    "rich.png", //Q
-    "saliva.png", //R
-    "shocked.png", //S
-    "stressed.png", //T
-    "toungeout.png", //U
-    "meh.png", //V
-    "flirty.png", //W
-    "wink.png", //X
-    "tounge.png", //Y
-    "last.png"  //Z
+    "..images/sad.png", //A
+    "..images/sleepy.png", //B
+    "..images/surprised.png", //C
+    "..images/mad.png", //D
+    "..images/happy.png", //E
+    "..images/confused.png", //F
+    "..images/calm.png", //G
+    "..images/concerned.png", //H
+    "..images/crazy.png", //I
+    "..images/creepy.png", //J
+    "..images/disapointed.png", //K
+    "..images/diviuse.png", //L
+    "..images/dolledup.png", //M
+    "..images/mistiviuse.png", //N
+    "..images/old.png", //O
+    "..images/overit.png", //P
+    "..images/rich.png", //Q
+    "..images/saliva.png", //R
+    "..images/shocked.png", //S
+    "..images/stressed.png", //T
+    "..images/toungeout.png", //U
+    "..images/meh.png", //V
+    "..images/flirty.png", //W
+    "..images/wink.png", //X
+    "..images/tounge.png", //Y
+    "..images/last.png"  //Z
 ];
 
 function displayImage() {
