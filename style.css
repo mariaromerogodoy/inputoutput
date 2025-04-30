@@ -1,6 +1,6 @@
 body {
     margin-top: 15%;
-    background-image: url('../images2/grid.jpg');
+    background-image: url('red-grid.jpg');
     background-size: cover;
     display: flex;
    /* flex-direction: column;*/ 
@@ -16,21 +16,25 @@ body {
   margin-left: 40%;
 }
 
+.button-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .button-link {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    background-color: #ff90e8;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     font-family: "jali-latin-variable", sans-serif;
     font-variation-settings: 'wght' 400;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     margin-top: 100px;
     cursor: pointer;
     font-size: 40px;
     padding: 50px 80px;
     padding: 10px;
-    text-decoration: none; 
     text-align: center;
     transition: all 0.14s ease-out;
     gap: 10px;
@@ -38,8 +42,9 @@ body {
 }
 
 .button-link:hover {
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #000000;
     transform: translate(-4px, -4px);
+    text-decoration: none;
 }
 
 .button-link:focus-visible {
